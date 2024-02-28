@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+.main{
+  width: 80%;
+  min-height: 80%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 2fr;
+  max-width: fit-content;
+  gap: 32px;
+}
+
+.data, .cv{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.data div{
+  display: flex;
+  flex-direction: column;
+}
+
+.cv .profile{
+  font-family: "EB Garamond", serif;
+  display: grid;
+  grid-template:
+    "name name" auto
+    "email phone" auto;
+  justify-content: start;
+  gap: 0px 10px;
+}
+
+.cv .profile .name{
+  grid-area: name;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cv .profile .email{
+  grid-area: email;
+}
+
+.cv .profile .phone{
+  grid-area: phone;
+}
+
+.cv .education{
+  display: flex;
+  flex-direction: column;
+}
+
+.cv .line{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv .line-break {
+  height: 1px;
+  background-color: black;
+  margin: 10px 0px;
+}
+
+h2{
+  padding: 10px 0px;
+  margin-bottom: 3px;
+  line-height: 1px;
+}
